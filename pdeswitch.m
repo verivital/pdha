@@ -74,26 +74,29 @@ size(u);
 
 
 surf(xlist,tlist,u) 
-title('Numerical solution computed with 10 mesh points.')
-xlabel('Distance x')
-ylabel('Time t')
+%title('Numerical solution computed with 10 mesh points.')
+xlabel('Distance x', 'FontSize', 18)
+ylabel('Time t', 'FontSize', 18)
+set(gca,'FontSize',17)
 
 figure
 plot(xlist,u(91,:))
-title('Solution at t = 9')
-xlabel('Distance x')
-ylabel('u(x,5)')
+%title('Solution at t = 9')
+xlabel('Distance x', 'FontSize', 18)
+ylabel('u(x,9)', 'FontSize', 18)
+set(gca,'FontSize',17)
 
 figure
 plot(tlist,u(:,2))
-title('Solution at x = 1')
-xlabel('Time t')
-ylabel('u(0,t)')
+%title('Solution at x = 1')
+xlabel('Time t', 'FontSize', 18)
+ylabel('u(0,t)', 'FontSize', 18)
+set(gca,'FontSize',17)
 
 figure
 plot(tlist,u(:,5))
-title('Solution at x = 4')
-xlabel('Time t')
-ylabel('u(0,t)')
-
+%title('Solution at x = 4')
+xlabel('Time t', 'FontSize', 18)
+ylabel('u(0,t)', 'FontSize', 18)
+set(gca,'FontSize',17)
 end
